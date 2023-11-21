@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1uLT6L23Hl_tu7fqqpPk9CNnypEV4O98Z -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>user-wireframe.drawio - Page-1</title>
+    <meta name="application-name" content="diagrams.net"><meta name="apple-mobile-web-app-title" content="diagrams.net">
+    
+    <meta name="Description" content="draw.io is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams">
+    <meta name="Keywords" content="drawio, diagram, online, flow chart, flowchart maker, uml, erd">
+    <meta itemprop="name" content="draw.io - free flowchart maker and diagrams online">
+	<meta itemprop="description" content="draw.io is a free online diagramming application and flowchart maker . You can use it to create UML, entity relationship,
+		org charts, BPMN and BPM, database schema and networks. Also possible are telecommunication network, workflow, flowcharts, maps overlays and GIS, electronic 
+		circuit and social network diagrams.">
+	<meta itemprop="image" content="https://lh4.googleusercontent.com/-cLKEldMbT_E/Tx8qXDuw6eI/AAAAAAAAAAs/Ke0pnlk8Gpg/w500-h344-k/BPMN%2Bdiagram%2Brc2f.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#d89000">
+	<script src="./user-wireframe.drawio - Page-1_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" defer="true" src="./user-wireframe.drawio - Page-1_files/extensions.min.js"></script><script type="text/javascript" defer="true" src="./user-wireframe.drawio - Page-1_files/stencils.min.js"></script><script type="text/javascript" defer="true" src="./user-wireframe.drawio - Page-1_files/shapes-14-6-5.min.js"></script><script type="text/javascript" defer="true" src="./user-wireframe.drawio - Page-1_files/api.js" gapi_processed="true"></script><script type="text/javascript" defer="true" src="./user-wireframe.drawio - Page-1_files/app.min.js"></script><script type="text/javascript">
+		/**
+		 * URL Parameters and protocol description are here:
+		 *
+		 * https://www.drawio.com/doc/faq/supported-url-parameters
+		 *
+		 * Parameters for developers:
+		 *
+		 * - dev=1: For developers only
+		 * - test=1: For developers only
+		 * - export=URL for export: For developers only
+		 * - ignoremime=1: For developers only (see DriveClient.js). Use Cmd-S to override mime.
+		 * - createindex=1: For developers only (see etc/build/README)
+		 * - filesupport=0: For developers only (see Editor.js in core)
+		 * - savesidebar=1: For developers only (see Sidebar.js)
+		 * - pages=1: For developers only (see Pages.js)
+		 * - lic=email: For developers only (see LicenseServlet.java)
+		 * --
+		 * - networkshapes=1: For testing network shapes (temporary)
+		 */
+		var urlParams = (function()
+		{
+			var result = new Object();
+			var params = window.location.search.slice(1).split('&');
+			
+			for (var i = 0; i < params.length; i++)
+			{
+				var idx = params[i].indexOf('=');
+				
+				if (idx > 0)
+				{
+					result[params[i].substring(0, idx)] = params[i].substring(idx + 1);
+				}
+			}
+			
+			return result;
+		})();
+		
+		// Forces CDN caches by passing URL parameters via URL hash
+		if (window.location.hash != null && window.location.hash.substring(0, 2) == '#P')
+		{
+			try
+			{
+				urlParams = JSON.parse(decodeURIComponent(window.location.hash.substring(2)));
+				
+				if (urlParams.hash != null)
+				{
+					window.location.hash = urlParams.hash;
+				}
+			}
+			catch (e)
+			{
+				// ignore
+			}
+		}
+		
+		// Global variable for desktop
+		var mxIsElectron = navigator.userAgent != null && navigator.userAgent.toLowerCase().indexOf(' electron/') > -1 && 
+							navigator.userAgent.indexOf(' draw.io/') > -1;
+
+		// Redirects page if required
+		if (urlParams['dev'] != '1')
+		{
+			(function()
+			{
+				var proto = window.location.protocol;
+				
+				if (!mxIsElectron)
+				{
+					var host = window.location.host;
+		
+					// Redirects apex, drive and rt to www
+					if (host === 'draw.io' || host === 'rt.draw.io' || host === 'drive.draw.io')
+					{
+						host = 'www.draw.io';
+					}
+					
+					var href = proto + '//' + host + window.location.href.substring(
+							window.location.protocol.length +
+							window.location.host.length + 2);
+		
+					// Redirects if href changes
+					if (href != window.location.href)
+					{
+						window.location.href = href;
+					}
+				}
+			})();
+		}
+		
+		/**
+		 * Adds meta tag to the page.
+		 */
+		function mxmeta(name, content, httpEquiv)
+		{
+			try
+			{
+				var s = document.createElement('meta');
+				
+				if (name != null) 
+				{
+					s.setAttribute('name', name);
+				}
+
+				s.setAttribute('content', content);
+				
+				if (httpEquiv != null) 
+				{
+					s.setAttribute('http-equiv', httpEquiv);
+				}
+
+			  	var t = document.getElementsByTagName('meta')[0];
+			  	t.parentNode.insertBefore(s, t);
+			}
+			catch (e)
+			{
+				// ignore
+			}
+		};
+		
+		/**
+		 * Synchronously adds scripts to the page.
+		 */
+		function mxscript(src, onLoad, id, dataAppKey, noWrite, onError)
+		{
+			var defer = onLoad == null && !noWrite;
+			
+			if ((urlParams['dev'] != '1' && typeof document.createElement('canvas').getContext === "function") ||
+				onLoad != null || noWrite)
+			{
+				var s = document.createElement('script');
+				s.setAttribute('type', 'text/javascript');
+				s.setAttribute('defer', 'true');
+				s.setAttribute('src', src);
+
+				if (id != null)
+				{
+					s.setAttribute('id', id);
+				}
+				
+				if (dataAppKey != null)
+				{
+					s.setAttribute('data-app-key', dataAppKey);
+				}
+				
+				if (onLoad != null)
+				{
+					var r = false;
+				
+					s.onload = s.onreadystatechange = function()
+					{
+						if (!r && (!this.readyState || this.readyState == 'complete'))
+						{
+				      		r = true;
+				      		onLoad();
+						}
+				  	};
+				}
+
+				if (onError != null)
+				{
+					s.onerror = function(e)
+					{
+						onError('Failed to load ' + src, e);
+					};
+				}
+			  	
+			  	var t = document.getElementsByTagName('script')[0];
+			  	
+			  	if (t != null)
+			  	{
+			  		t.parentNode.insertBefore(s, t);
+			  	}
+			}
+			else
+			{
+				document.write('<script src="' + src + '"' + ((id != null) ? ' id="' + id +'" ' : '') +
+					((dataAppKey != null) ? ' data-app-key="' + dataAppKey +'" ' : '') + '></scr' + 'ipt>');
+			}
+		};
+
+		/**
+		 * Asynchronously adds scripts to the page.
+		 */
+		function mxinclude(src)
+		{
+			var g = document.createElement('script');
+			g.type = 'text/javascript';
+			g.async = true;
+			g.src = src;
+			
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(g, s);
+		};
+		
+		/**
+		 * Adds meta tags with application name (depends on offline URL parameter)
+		 */
+		(function()
+		{
+			var name = 'diagrams.net';
+			mxmeta('apple-mobile-web-app-title', name);
+			mxmeta('application-name', name);
+
+			if (mxIsElectron)
+			{
+				mxmeta(null, 'default-src \'self\'; script-src \'self\' \'sha256-6g514VrT/cZFZltSaKxIVNFF46+MFaTSDTPB8WfYK+c=\'; connect-src \'self\' https://*.draw.io https://*.diagrams.net https://fonts.googleapis.com https://fonts.gstatic.com; img-src * data:; media-src *; font-src *; frame-src \'none\'; style-src \'self\' \'unsafe-inline\' https://fonts.googleapis.com; base-uri \'none\';child-src \'self\';object-src \'none\';', 'Content-Security-Policy');
+			}
+		})();
+		
+		// Checks for local storage
+		var isLocalStorage = false;
+		
+		try
+		{
+			isLocalStorage = urlParams['local'] != '1' && typeof(localStorage) != 'undefined';
+		}
+		catch (e)
+		{
+			// ignored
+		}
+
+		var mxScriptsLoaded = false, mxWinLoaded = false;
+		
+		function checkAllLoaded()
+		{
+			if (mxScriptsLoaded && mxWinLoaded)
+			{
+				App.main();				
+			}
+		};
+		
+		var t0 = new Date();
+
+		// Changes paths for local development environment
+		if (urlParams['dev'] == '1')
+		{
+			// Used to request grapheditor/mxgraph sources in dev mode
+			var mxDevUrl = document.location.protocol + '//test.draw.io/drawio/src/main';
+			
+			// Used to request draw.io sources in dev mode
+			var drawDevUrl = document.location.protocol + '//test.draw.io/drawio/src/main/webapp/';
+			var geBasePath = drawDevUrl + '/js/grapheditor';
+			var mxBasePath = mxDevUrl + '/mxgraph';
+			
+			if (document.location.protocol == 'file:')
+			{
+				geBasePath = './js/grapheditor';
+				mxBasePath = './mxgraph';
+				drawDevUrl = './';
+				
+				// Forces includes for dev environment in node.js
+				mxForceIncludes = true;
+			}
+
+			mxForceIncludes = false;
+
+			mxscript(drawDevUrl + 'js/PreConfig.js');
+			mxscript(drawDevUrl + 'js/diagramly/Init.js');
+			mxscript(geBasePath + '/Init.js');
+			mxscript(mxBasePath + '/mxClient.js');
+			
+			// Adds all JS code that depends on mxClient. This indirection via Devel.js is
+			// required in some browsers to make sure mxClient.js (and the files that it
+			// loads asynchronously) are available when the code loaded in Devel.js runs.
+			mxscript(drawDevUrl + 'js/diagramly/Devel.js');
+			
+			// Electron
+			if (mxIsElectron)
+			{
+				mxscript('js/diagramly/DesktopLibrary.js');
+				mxscript('js/diagramly/ElectronApp.js');
+			}
+			
+			mxscript(drawDevUrl + 'js/PostConfig.js');
+		}
+		else
+		{
+			(function()
+			{
+				var hostName = window.location.hostname;
+				
+				// Supported domains are *.draw.io and the packaged version in Quip
+				var supportedDomain = (hostName.substring(hostName.length - 8, hostName.length) === '.draw.io') ||
+					(hostName.substring(hostName.length - 13, hostName.length) === '.diagrams.net');
+				
+				function loadAppJS()
+				{
+					mxscript('js/app.min.js', function()
+					{
+						mxScriptsLoaded = true;
+						checkAllLoaded();
+						
+						// Electron
+						if (mxIsElectron)
+						{
+							mxscript('js/diagramly/DesktopLibrary.js', function()
+							{
+								mxscript('js/diagramly/ElectronApp.js', function()
+								{
+									mxscript('js/extensions.min.js', function()
+									{
+										mxscript('js/stencils.min.js', function()
+										{
+											mxscript('js/shapes-14-6-5.min.js', function()
+											{
+												mxscript('js/PostConfig.js');
+											});
+										});
+									});
+								});
+							});
+						}
+						else if (!supportedDomain)
+						{
+							mxscript('js/PostConfig.js');
+						}
+					});
+				};
+				
+				if (!supportedDomain || mxIsElectron)
+				{
+					mxscript('js/PreConfig.js', loadAppJS);
+				}
+				else
+				{
+					loadAppJS();
+				}
+			})();
+		}
+
+		// Adds basic error handling
+		window.onerror = function()
+		{
+			var status = document.getElementById('geStatus');
+			
+			if (status != null)
+			{
+				status.innerHTML = 'Page could not be loaded. Please try refreshing.';
+			}
+		};
+	</script>
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/plgmlhohecdddhbmmkncjdmlhcmaachm">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://viewer.diagrams.net/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://viewer.diagrams.net/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://viewer.diagrams.net/images/favicon-16x16.png">
+	<link rel="mask-icon" href="https://viewer.diagrams.net/images/safari-pinned-tab.svg" color="#d89000">
+    <link rel="stylesheet" type="text/css" href="./user-wireframe.drawio - Page-1_files/grapheditor.css">
+    <link rel="canonical" href="https://app.diagrams.net/">
+	<link rel="manifest" href="https://viewer.diagrams.net/images/manifest.json">
+	<link rel="shortcut icon" href="https://viewer.diagrams.net/favicon.ico">
+	<style type="text/css">
+		body { overflow:hidden; }
+		div.picker { z-index: 10007; }
+		.geSidebarContainer .geTitle input {
+			font-size:8pt;
+			color:#606060;
+		}
+		.geBlock {
+			z-index:-3;
+			margin:100px;
+			margin-top:40px;
+			margin-bottom:30px;
+			padding:20px;
+			text-align:center;
+			min-width:50%;
+		}
+		.geBlock h1, .geBlock h2 {
+			margin-top:0px;
+			padding-top:0px;
+		}
+		.geEditor *:not(.geScrollable)::-webkit-scrollbar {
+		    width:10px;
+		    height:10px;
+		}
+		.geEditor ::-webkit-scrollbar-track {
+			background-clip:padding-box;
+			border:solid transparent;
+			border-width:1px;
+		}
+		.geEditor ::-webkit-scrollbar-corner {
+			background-color:transparent;
+		}
+		.geEditor ::-webkit-scrollbar-thumb {
+			background-color:rgba(0,0,0,.1);
+			background-clip:padding-box;
+			border:solid transparent;
+			border-radius:10px;
+		}
+		.geEditor ::-webkit-scrollbar-thumb:hover {
+			background-color:rgba(0,0,0,.4);
+		}
+		.geTemplate {
+			border:1px solid transparent;
+			display:inline-block;
+			_display:inline;
+			vertical-align:top;
+			border-radius:3px;
+			overflow:hidden;
+			font-size:14pt;
+			cursor:pointer;
+			margin:5px;
+		}
+	</style>
+	<!-- Workaround for binary XHR in IE 9/10, see App.loadUrl -->
+	<!--[if (IE 9)|(IE 10)]><!-->
+		<script type="text/vbscript">
+			Function mxUtilsBinaryToArray(Binary)
+				Dim i
+				ReDim byteArray(LenB(Binary))
+				For i = 1 To LenB(Binary)
+					byteArray(i-1) = AscB(MidB(Binary, i, 1))
+				Next
+				mxUtilsBinaryToArray = byteArray
+			End Function
+		</script>
+	<!--<![endif]-->
+<style type="text/css"></style><link rel="stylesheet" href="./user-wireframe.drawio - Page-1_files/common.css" charset="UTF-8" type="text/css"><script type="text/javascript" src="./user-wireframe.drawio - Page-1_files/startup.js"></script><script src="./user-wireframe.drawio - Page-1_files/core.js" charset="UTF-8"></script><script src="./user-wireframe.drawio - Page-1_files/svg.js" charset="UTF-8"></script><script src="./user-wireframe.drawio - Page-1_files/tex.js" charset="UTF-8"></script><script src="./user-wireframe.drawio - Page-1_files/asciimath.js" charset="UTF-8"></script><script src="./user-wireframe.drawio - Page-1_files/safe.js" charset="UTF-8"></script><script src="./user-wireframe.drawio - Page-1_files/tex(1).js" charset="UTF-8"></script><style>.picker-dialog-frame{width:100%;height:100%;border:0;overflow:hidden}.picker-dialog-bg{position:absolute;top:0;left:0;background-color:#fff;z-index:1000}.picker-dialog{position:absolute;top:0;left:0;background-color:#fff;border:1px solid #acacac;width:auto;padding:0;z-index:1001;overflow:auto;box-shadow:0 4px 16px rgba(0,0,0,.2)}.picker-dialog-content{font-size:0;padding:0}.picker-dialog-buttons,.picker-dialog-title{display:none}</style><style>@font-face { font-family: "Architects Daughter"; src: url(styles/fonts/ArchitectsDaughter-Regular.ttf) format("truetype"); }</style></head>
+<body class="geEditor">
+
+<script type="text/javascript">
+/**
+ * Main
+ */
+if (urlParams['dev'] != '1' && typeof document.createElement('canvas').getContext === "function")
+{
+	window.addEventListener('load', function()
+	{
+		mxWinLoaded = true;
+		checkAllLoaded();
+	});
+}
+else
+{
+	App.main();
+}
+</script>
+
+
+<div class="geDiagramContainer" tabindex="0" style="inset: 0px; border: none; cursor: move; overflow: auto;"><svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 1404px; min-height: 914px; position: absolute; background-image: none; background-color: rgb(255, 255, 255);"><defs><filter id="dropShadow"><fegaussianblur in="SourceAlpha" stdDeviation="1.7" result="blur"></fegaussianblur><feoffset in="blur" dx="3" dy="3" result="offsetBlur"></feoffset><feflood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feflood><fecomposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></fecomposite><feblend in="SourceGraphic" in2="offsetBlur"></feblend></filter></defs><g transformOrigin="0 0" transform="scale(1.12,1.12)translate(131,4)"><g></g><g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="20" y="100" width="230" height="710" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="20" y="100" width="230" height="710" fill="none" stroke="none" pointer-events="all"></rect><path d="M 16.55 97.61 L 250.46 102.65 L 253.75 810.16 L 19.44 811.81" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 20 100 C 83.69 101.01 153.67 102.81 250 100 M 20 100 C 87.08 99.12 154.39 98.74 250 100 M 250 100 C 244.79 292.66 247.03 484.05 250 810 M 250 100 C 243.98 257.06 244.42 415.59 250 810 M 250 810 C 166.7 809.69 79.46 807.51 20 810 M 250 810 C 158.99 809.9 68.41 808.05 20 810 M 20 810 C 18.6 635.58 19.48 459.58 20 100 M 20 810 C 24.87 607 25.74 403.95 20 100" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="266" y="100" width="854" height="700" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="266" y="100" width="854" height="700" fill="none" stroke="none" pointer-events="all"></rect><path d="M 265.61 102.07 L 1120.69 98.08 L 1119.4 797.21 L 264.62 797.78" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 266 100 C 514.46 104.67 762.65 105.67 1120 100 M 266 100 C 574.13 94.43 882.68 93.62 1120 100 M 1120 100 C 1121.64 313.09 1122.97 528.5 1120 800 M 1120 100 C 1116.02 378.95 1115.57 656.18 1120 800 M 1120 800 C 835.97 802.25 552.15 802.43 266 800 M 1120 800 C 921.32 800.54 721.06 800.38 266 800 M 266 800 C 270.24 529.54 268.34 258.97 266 100 M 266 800 C 266.24 633.72 265.64 467.34 266 100" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="20" y="20" width="1100" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="20" y="20" width="1100" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 23.81 23.9 L 1121.59 23.78 L 1117.99 81.43 L 23.36 77.65" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 20 20 C 339.34 18.82 658.3 20.46 1120 20 M 20 20 C 294.4 25.81 568.83 27.31 1120 20 M 1120 20 C 1121.71 34.4 1115.92 50.58 1120 80 M 1120 20 C 1118.66 38.01 1120.73 55.82 1120 80 M 1120 80 C 701.39 89.45 284.86 88.02 20 80 M 1120 80 C 683.07 86.5 247.07 87.58 20 80 M 20 80 C 16.39 59.55 15.89 37.48 20 20 M 20 80 C 21.19 64.33 21.03 51.78 20 20" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="303" y="110" width="780" height="300" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="303" y="110" width="780" height="300" fill="none" stroke="none" pointer-events="all"></rect><path d="M 299.97 111.28 L 1085.27 108.06 L 1083.94 410.6 L 303.91 411.56" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 303 110 C 530.03 112.23 756.6 111.15 1083 110 M 303 110 C 509.78 115.61 717.5 115.23 1083 110 M 1083 110 C 1080.12 212.97 1082.59 319.41 1083 410 M 1083 110 C 1083.59 176.36 1086.12 245.57 1083 410 M 1083 410 C 877.55 407.41 670.81 406.38 303 410 M 1083 410 C 833.18 406 583.76 406.01 303 410 M 303 410 C 296.9 298.81 298.87 188.62 303 110 M 303 410 C 302.21 319.47 302.82 230.89 303 110" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 940 720 L 1040 720 L 1040 780 L 940 780 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 940 720 L 1040 720 L 1040 780 L 940 780 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 940 780 L 940 720 L 950 730 L 950 770 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 940 780 L 940 720 L 950 730 L 950 770 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 940 720 L 1040 720 L 1030 730 L 950 730 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 940 720 L 1040 720 L 1030 730 L 950 730 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 1040 720 L 1040 780 L 1030 770 L 1030 730 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 1040 720 L 1040 780 L 1030 770 L 1030 730 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 940 780 L 950 770 L 1030 770 L 1040 780 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 940 780 L 950 770 L 1030 770 L 1040 780 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 940 780 L 940 720 L 950 730 L 950 770 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 940 780 L 940 720 L 950 730 L 950 770 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 943.49 719.75 L 1038.34 722.91 L 1043.52 780.21 L 940.53 779.8 L 942.51 716.25" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 940 720 M 940 720 C 977.32 719.97 1010.92 717.69 1040 720 M 940 720 C 961.36 718.07 981.7 716.74 1040 720 M 1040 720 C 1039.33 738.26 1039.11 763.43 1040 780 M 1040 720 C 1040.62 734.09 1041.07 745.85 1040 780 M 1040 780 C 1013.87 780.85 987.87 783.13 940 780 M 1040 780 C 1020.19 778.01 997.09 776.87 940 780 M 940 780 C 943.07 758.73 940.25 733.5 940 720 M 940 780 C 939.59 760.09 941.64 738.15 940 720" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 943.49 779.75 L 938.34 722.91 L 953.52 730.21 L 950.53 769.8 L 942.51 776.25" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 940 780 M 940 780 C 942.24 758.67 940.31 735.07 940 720 M 940 780 C 939.42 766.4 937.96 752 940 720 M 940 720 C 942.92 721.8 946.23 728.37 950 730 M 940 720 C 941.95 723.2 944.38 724.68 950 730 M 950 730 C 948.38 740.73 946.98 752.86 950 770 M 950 730 C 951.03 738.27 949.41 745.73 950 770 M 950 770 C 948.35 776.08 942.36 779.18 940 780 M 950 770 C 945.94 774.26 943.86 777.25 940 780" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 943.49 719.75 L 1038.34 722.91 L 1033.52 730.21 L 950.53 729.8 L 942.51 716.25" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 940 720 M 940 720 C 977.32 719.97 1010.92 717.69 1040 720 M 940 720 C 961.36 718.07 981.7 716.74 1040 720 M 1040 720 C 1036 721.58 1032.38 728.16 1030 730 M 1040 720 C 1037.74 723.06 1035.94 724.54 1030 730 M 1030 730 C 1008.8 730.85 987.72 733.14 950 730 M 1030 730 C 1014.48 728.34 995.69 727.21 950 730 M 950 730 C 948.28 728.09 942.29 723.2 940 720 M 950 730 C 946.04 727.2 943.95 723.13 940 720" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 1043.49 719.75 L 1038.34 782.91 L 1033.52 770.21 L 1030.53 729.8 L 1042.51 716.25" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 1040 720 M 1040 720 C 1041.33 741.31 1039.39 760.35 1040 780 M 1040 720 C 1039.69 732.56 1038.24 744.31 1040 780 M 1040 780 C 1035.96 774.66 1032.34 774.31 1030 770 M 1040 780 C 1037.37 778.84 1035.58 776.11 1030 770 M 1030 770 C 1028.59 761.05 1027.2 753.49 1030 730 M 1030 770 C 1032.31 761.08 1030.7 751.36 1030 730 M 1030 730 C 1036.27 727.74 1038.27 722.86 1040 720 M 1030 730 C 1033.1 727.54 1038.08 723.47 1040 720" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 943.49 779.75 L 948.34 772.91 L 1033.52 770.21 L 1040.53 779.8 L 942.51 776.25" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 940 780 M 940 780 C 944.89 776.44 947.08 771.27 950 770 M 940 780 C 941.84 777.31 942.99 774.19 950 770 M 950 770 C 976.9 768.37 1004.37 772.77 1030 770 M 950 770 C 966.38 772.01 983.69 771.12 1030 770 M 1030 770 C 1031.36 773.1 1032.84 777.17 1040 780 M 1030 770 C 1033.17 772.09 1034.17 773.43 1040 780 M 1040 780 C 1003.32 784.43 960.55 783.18 940 780 M 1040 780 C 1004.02 779.57 970.77 778.81 940 780" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 943.49 779.75 L 938.34 722.91 L 953.52 730.21 L 950.53 769.8 L 942.51 776.25" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 940 780 M 940 780 C 942.24 758.67 940.31 735.07 940 720 M 940 780 C 939.42 766.4 937.96 752 940 720 M 940 720 C 942.92 721.8 946.23 728.37 950 730 M 940 720 C 941.95 723.2 944.38 724.68 950 730 M 950 730 C 948.38 740.73 946.98 752.86 950 770 M 950 730 C 951.03 738.27 949.41 745.73 950 770 M 950 770 C 948.35 776.08 942.36 779.18 940 780 M 950 770 C 945.94 774.26 943.86 777.25 940 780" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignobject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 750px; margin-left: 941px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 20px; font-family: &quot;Architects Daughter&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Button</div></div></div></foreignobject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="583" y="670" width="220" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="583" y="670" width="220" height="30" fill="none" stroke="none" pointer-events="all"></rect><path d="M 583.8 671.36 L 804.9 670.97 L 801.39 698.7 L 580.01 702.48" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 583 670 C 666.74 669.49 752.42 667.59 803 670 M 583 670 C 637.22 669.06 687.38 667.78 803 670 M 803 670 C 806.52 682.25 800.07 694.67 803 700 M 803 670 C 804.47 676.02 802.05 685.28 803 700 M 803 700 C 725.44 703.34 641 704.53 583 700 M 803 700 C 747.06 702.85 692.19 702.03 583 700 M 583 700 C 581.69 690.59 583.89 690.26 583 670 M 583 700 C 583.62 688.4 584.02 677.46 583 670" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="50" y="130" width="170" height="50" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="50" y="130" width="170" height="50" fill="none" stroke="none" pointer-events="all"></rect><path d="M 51.96 128.74 L 222.58 133.25 L 221.33 177.87 L 52.56 178.39" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 50 130 C 115.31 132.52 182.64 131.52 220 130 M 50 130 C 94.41 131.11 136.42 128.94 220 130 M 220 130 C 221.28 141.96 223.99 157.05 220 180 M 220 130 C 221.13 149.41 220.08 164.14 220 180 M 220 180 C 176.69 176.83 132.98 179.21 50 180 M 220 180 C 155.32 178.69 90.57 179.07 50 180 M 50 180 C 47.78 165.28 53.16 154.63 50 130 M 50 180 C 49.76 167.45 51.17 155.09 50 130" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="70" y="290" width="120" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="70" y="290" width="120" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 67.01 293.19 L 192.8 288.67 L 186.98 352.93 L 71.74 352.36" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 70 290 C 113.66 287.16 159.29 286.56 190 290 M 70 290 C 108.7 290.17 149.75 286.44 190 290 M 190 290 C 189.71 311.16 190.14 328.46 190 350 M 190 290 C 189.78 310.97 190.53 327.28 190 350 M 190 350 C 162.34 350.15 139.45 347.52 70 350 M 190 350 C 165.73 350.17 136.94 348.33 70 350 M 70 350 C 73.6 324.54 72.03 306.81 70 290 M 70 350 C 72.23 325.78 69.97 301.59 70 290" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="75" y="410" width="120" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="75" y="410" width="120" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 75.06 409.65 L 198.03 412.1 L 195.63 469.98 L 75.93 468.33" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 75 410 C 124.38 407 167.65 406.8 195 410 M 75 410 C 124.73 409.94 169.57 412.65 195 410 M 195 410 C 195.48 429.62 193.63 454.35 195 470 M 195 410 C 193.45 429.03 195.99 447.42 195 470 M 195 470 C 154.74 472.85 108.42 473.21 75 470 M 195 470 C 164.3 470.93 132.66 470.87 75 470 M 75 470 C 74.02 448.06 73.52 429.5 75 410 M 75 470 C 73.41 448.52 75.49 426.93 75 410" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="75" y="540" width="120" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="75" y="540" width="120" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 78.11 536.11 L 198.26 537.52 L 191.28 597.04 L 75.11 602.3" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 75 540 C 122.09 544.85 171.01 545.04 195 540 M 75 540 C 107.76 538.92 140.39 540.07 195 540 M 195 540 C 193.85 566.07 197.73 582.25 195 600 M 195 540 C 196.11 557.08 196.45 573.55 195 600 M 195 600 C 158.14 597.54 112.4 600.9 75 600 M 195 600 C 157.88 601.69 123.37 599.4 75 600 M 75 600 C 71.84 581.57 72.4 570.19 75 540 M 75 600 C 75.99 581.27 74.4 566.26 75 540" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="70" y="670" width="120" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="70" y="670" width="120" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 68.25 668.18 L 190.23 670.87 L 186.54 726.25 L 68.15 731.62" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 70 670 C 114.82 668.16 159.97 669.12 190 670 M 70 670 C 101.45 672.07 129.48 670.82 190 670 M 190 670 C 188.24 694.05 189.99 713.92 190 730 M 190 670 C 188.97 688.26 188.78 710.47 190 730 M 190 730 C 155.93 729.17 122.8 726.49 70 730 M 190 730 C 143.53 730.85 94.05 731.6 70 730 M 70 730 C 74.12 712.92 74.02 687.38 70 670 M 70 730 C 70.94 715.66 72.67 701.65 70 670" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="520" y="430" width="360" height="170" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="520" y="430" width="360" height="170" fill="none" stroke="none" pointer-events="all"></rect><path d="M 516.35 429.1 L 880.69 429.72 L 883.84 598.36 L 516.52 601.56" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 520 430 C 660.55 430.44 801.21 431.56 880 430 M 520 430 C 664.62 428.91 808.03 428.67 880 430 M 880 430 C 878.33 471.6 883.52 503.01 880 600 M 880 430 C 881.73 479.5 881.14 525.01 880 600 M 880 600 C 804.28 598.49 730.64 600.59 520 600 M 880 600 C 777.79 603.64 678.19 603.83 520 600 M 520 600 C 516.17 565.28 518.19 521.42 520 430 M 520 600 C 515.23 542.58 517.63 485.17 520 430" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g></g><g></g><g></g></g></svg><div style="position: fixed; overflow: hidden; box-sizing: border-box; white-space: nowrap; padding: 10px 10px 8px; left: 50%; background-color: rgb(0, 0, 0); border-radius: 16px; transition: opacity 600ms ease-in-out 0s; bottom: 20px; transform: translate(-50%, 0px); opacity: 0.3;"><span title="Previous Page" style="padding-left: 0px; padding-right: 4px; cursor: pointer; display: none;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE1LjQxIDcuNDFMMTQgNmwtNiA2IDYgNiAxLjQxLTEuNDFMMTAuODMgMTJsNC41OC00LjU5eiIvPjwvc3ZnPg==" style="width: 36px; filter: invert(100%);"></span><div style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI Variable&quot;, &quot;Segoe UI&quot;, system-ui, ui-sans-serif, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; display: none; vertical-align: top; font-weight: bold; margin-top: 8px; font-size: 14px; color: rgb(255, 255, 255);"></div><span title="Next Page" style="padding-left: 4px; padding-right: 0px; cursor: pointer; display: none;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEwIDZMOC41OSA3LjQxIDEzLjE3IDEybC00LjU4IDQuNTlMMTAgMThsNi02LTYtNnoiLz48L3N2Zz4=" style="width: 36px; filter: invert(100%);"></span><span title="Zoom Out (Alt+Mousewheel)" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuNSAxNGgtLjc5bC0uMjgtLjI3QzE1LjQxIDEyLjU5IDE2IDExLjExIDE2IDkuNSAxNiA1LjkxIDEzLjA5IDMgOS41IDNTMyA1LjkxIDMgOS41IDUuOTEgMTYgOS41IDE2YzEuNjEgMCAzLjA5LS41OSA0LjIzLTEuNTdsLjI3LjI4di43OWw1IDQuOTlMMjAuNDkgMTlsLTQuOTktNXptLTYgMEM3LjAxIDE0IDUgMTEuOTkgNSA5LjVTNy4wMSA1IDkuNSA1IDE0IDcuMDEgMTQgOS41IDExLjk5IDE0IDkuNSAxNHpNNyA5aDV2MUg3eiIvPjwvc3ZnPg==" style="width: 36px; filter: invert(100%);"></span><span title="Zoom In (Alt+Mousewheel)" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuNSAxNGgtLjc5bC0uMjgtLjI3QzE1LjQxIDEyLjU5IDE2IDExLjExIDE2IDkuNSAxNiA1LjkxIDEzLjA5IDMgOS41IDNTMyA1LjkxIDMgOS41IDUuOTEgMTYgOS41IDE2YzEuNjEgMCAzLjA5LS41OSA0LjIzLTEuNTdsLjI3LjI4di43OWw1IDQuOTlMMjAuNDkgMTlsLTQuOTktNXptLTYgMEM3LjAxIDE0IDUgMTEuOTkgNSA5LjVTNy4wMSA1IDkuNSA1IDE0IDcuMDEgMTQgOS41IDExLjk5IDE0IDkuNSAxNHptMi41LTRoLTJ2Mkg5di0ySDdWOWgyVjdoMXYyaDJ2MXoiLz48L3N2Zz4=" style="width: 36px; filter: invert(100%);"></span><span title="Fit" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTUgMTVIM3Y0YzAgMS4xLjkgMiAyIDJoNHYtMkg1di00ek01IDVoNFYzSDVjLTEuMSAwLTIgLjktMiAydjRoMlY1em03IDNjLTIuMjEgMC00IDEuNzktNCA0czEuNzkgNCA0IDQgNC0xLjc5IDQtNC0xLjc5LTQtNC00em0wIDZjLTEuMSAwLTItLjktMi0ycy45LTIgMi0yIDIgLjkgMiAyLS45IDItMiAyem03LTExaC00djJoNHY0aDJWNWMwLTEuMS0uOS0yLTItMnptMCAxNmgtNHYyaDRjMS4xIDAgMi0uOSAyLTJ2LTRoLTJ2NHoiLz48L3N2Zz4=" style="width: 36px; filter: invert(100%);"></span><span title="Layers" style="padding-left: 8px; padding-right: 8px; cursor: pointer; display: none;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTExLjk5IDE4LjU0bC03LjM3LTUuNzNMMyAxNC4wN2w5IDcgOS03LTEuNjMtMS4yN3pNMTIgMTZsNy4zNi01LjczTDIxIDlsLTktNy05IDcgMS42MyAxLjI3TDEyIDE2em0wLTExLjQ3TDE3Ljc0IDkgMTIgMTMuNDcgNi4yNiA5IDEyIDQuNTN6Ii8+PC9zdmc+" style="width: 36px; filter: invert(100%);"></span><span title="Tags" style="padding-left: 8px; padding-right: 8px; cursor: pointer; display: none;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE4cHgiIGZpbGw9IiMwMDAwMDAiPjxnPjxwYXRoIGQ9Ik0wLDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjwvZz48Zz48Zz48cGF0aCBkPSJNMjEuNDEsMTEuNDFsLTguODMtOC44M0MxMi4yMSwyLjIxLDExLjcsMiwxMS4xNywySDRDMi45LDIsMiwyLjksMiw0djcuMTdjMCwwLjUzLDAuMjEsMS4wNCwwLjU5LDEuNDFsOC44Myw4LjgzIGMwLjc4LDAuNzgsMi4wNSwwLjc4LDIuODMsMGw3LjE3LTcuMTdDMjIuMiwxMy40NiwyMi4yLDEyLjIsMjEuNDEsMTEuNDF6IE0xMi44MywyMEw0LDExLjE3VjRoNy4xN0wyMCwxMi44M0wxMi44MywyMHoiLz48Y2lyY2xlIGN4PSI2LjUiIGN5PSI2LjUiIHI9IjEuNSIvPjwvZz48L2c+PC9zdmc+" style="width: 36px; filter: invert(100%);"></span><span title="Print" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE5IDhoLTFWM0g2djVINWMtMS42NiAwLTMgMS4zNC0zIDN2Nmg0djRoMTJ2LTRoNHYtNmMwLTEuNjYtMS4zNC0zLTMtM3pNOCA1aDh2M0g4VjV6bTggMTJ2Mkg4di00aDh2MnptMi0ydi0ySDZ2Mkg0di00YzAtLjU1LjQ1LTEgMS0xaDE0Yy41NSAwIDEgLjQ1IDEgMXY0aC0yeiIvPjxjaXJjbGUgY3g9IjE4IiBjeT0iMTEuNSIgcj0iMSIvPjwvc3ZnPg==" style="width: 36px; filter: invert(100%);"></span><span title="Export" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE0LjEyIDRsMS44MyAySDIwdjEySDRWNmg0LjA1bDEuODMtMmg0LjI0TTE1IDJIOUw3LjE3IDRINGMtMS4xIDAtMiAuOS0yIDJ2MTJjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0yaC0zLjE3TDE1IDJ6bS0zIDdjMS42NSAwIDMgMS4zNSAzIDNzLTEuMzUgMy0zIDMtMy0xLjM1LTMtMyAxLjM1LTMgMy0zbTAtMmMtMi43NiAwLTUgMi4yNC01IDVzMi4yNCA1IDUgNSA1LTIuMjQgNS01LTIuMjQtNS01LTV6Ii8+PC9zdmc+" style="width: 36px; filter: invert(100%);"></span><span title="Edit" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE0LjA2IDkuMDJsLjkyLjkyTDUuOTIgMTlINXYtLjkybDkuMDYtOS4wNk0xNy42NiAzYy0uMjUgMC0uNTEuMS0uNy4yOWwtMS44MyAxLjgzIDMuNzUgMy43NSAxLjgzLTEuODNjLjM5LS4zOS4zOS0xLjAyIDAtMS40MWwtMi4zNC0yLjM0Yy0uMi0uMi0uNDUtLjI5LS43MS0uMjl6bS0zLjYgMy4xOUwzIDE3LjI1VjIxaDMuNzVMMTcuODEgOS45NGwtMy43NS0zLjc1eiIvPjwvc3ZnPg==" style="width: 36px; filter: invert(100%);"></span></div></div></body></html>

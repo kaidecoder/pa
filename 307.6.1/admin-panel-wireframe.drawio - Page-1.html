@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0121)https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1Fd_ELST-%2DSWHBs7lZr1ZCfQadg6AfoND -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>admin-panel-wireframe.drawio - Page-1</title>
+    <meta name="application-name" content="diagrams.net"><meta name="apple-mobile-web-app-title" content="diagrams.net">
+    
+    <meta name="Description" content="draw.io is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams">
+    <meta name="Keywords" content="drawio, diagram, online, flow chart, flowchart maker, uml, erd">
+    <meta itemprop="name" content="draw.io - free flowchart maker and diagrams online">
+	<meta itemprop="description" content="draw.io is a free online diagramming application and flowchart maker . You can use it to create UML, entity relationship,
+		org charts, BPMN and BPM, database schema and networks. Also possible are telecommunication network, workflow, flowcharts, maps overlays and GIS, electronic 
+		circuit and social network diagrams.">
+	<meta itemprop="image" content="https://lh4.googleusercontent.com/-cLKEldMbT_E/Tx8qXDuw6eI/AAAAAAAAAAs/Ke0pnlk8Gpg/w500-h344-k/BPMN%2Bdiagram%2Brc2f.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#d89000">
+	<script src="./admin-panel-wireframe.drawio - Page-1_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" defer="true" src="./admin-panel-wireframe.drawio - Page-1_files/extensions.min.js"></script><script type="text/javascript" defer="true" src="./admin-panel-wireframe.drawio - Page-1_files/stencils.min.js"></script><script type="text/javascript" defer="true" src="./admin-panel-wireframe.drawio - Page-1_files/shapes-14-6-5.min.js"></script><script type="text/javascript" defer="true" src="./admin-panel-wireframe.drawio - Page-1_files/api.js" gapi_processed="true"></script><script type="text/javascript" defer="true" src="./admin-panel-wireframe.drawio - Page-1_files/app.min.js"></script><script type="text/javascript">
+		/**
+		 * URL Parameters and protocol description are here:
+		 *
+		 * https://www.drawio.com/doc/faq/supported-url-parameters
+		 *
+		 * Parameters for developers:
+		 *
+		 * - dev=1: For developers only
+		 * - test=1: For developers only
+		 * - export=URL for export: For developers only
+		 * - ignoremime=1: For developers only (see DriveClient.js). Use Cmd-S to override mime.
+		 * - createindex=1: For developers only (see etc/build/README)
+		 * - filesupport=0: For developers only (see Editor.js in core)
+		 * - savesidebar=1: For developers only (see Sidebar.js)
+		 * - pages=1: For developers only (see Pages.js)
+		 * - lic=email: For developers only (see LicenseServlet.java)
+		 * --
+		 * - networkshapes=1: For testing network shapes (temporary)
+		 */
+		var urlParams = (function()
+		{
+			var result = new Object();
+			var params = window.location.search.slice(1).split('&');
+			
+			for (var i = 0; i < params.length; i++)
+			{
+				var idx = params[i].indexOf('=');
+				
+				if (idx > 0)
+				{
+					result[params[i].substring(0, idx)] = params[i].substring(idx + 1);
+				}
+			}
+			
+			return result;
+		})();
+		
+		// Forces CDN caches by passing URL parameters via URL hash
+		if (window.location.hash != null && window.location.hash.substring(0, 2) == '#P')
+		{
+			try
+			{
+				urlParams = JSON.parse(decodeURIComponent(window.location.hash.substring(2)));
+				
+				if (urlParams.hash != null)
+				{
+					window.location.hash = urlParams.hash;
+				}
+			}
+			catch (e)
+			{
+				// ignore
+			}
+		}
+		
+		// Global variable for desktop
+		var mxIsElectron = navigator.userAgent != null && navigator.userAgent.toLowerCase().indexOf(' electron/') > -1 && 
+							navigator.userAgent.indexOf(' draw.io/') > -1;
+
+		// Redirects page if required
+		if (urlParams['dev'] != '1')
+		{
+			(function()
+			{
+				var proto = window.location.protocol;
+				
+				if (!mxIsElectron)
+				{
+					var host = window.location.host;
+		
+					// Redirects apex, drive and rt to www
+					if (host === 'draw.io' || host === 'rt.draw.io' || host === 'drive.draw.io')
+					{
+						host = 'www.draw.io';
+					}
+					
+					var href = proto + '//' + host + window.location.href.substring(
+							window.location.protocol.length +
+							window.location.host.length + 2);
+		
+					// Redirects if href changes
+					if (href != window.location.href)
+					{
+						window.location.href = href;
+					}
+				}
+			})();
+		}
+		
+		/**
+		 * Adds meta tag to the page.
+		 */
+		function mxmeta(name, content, httpEquiv)
+		{
+			try
+			{
+				var s = document.createElement('meta');
+				
+				if (name != null) 
+				{
+					s.setAttribute('name', name);
+				}
+
+				s.setAttribute('content', content);
+				
+				if (httpEquiv != null) 
+				{
+					s.setAttribute('http-equiv', httpEquiv);
+				}
+
+			  	var t = document.getElementsByTagName('meta')[0];
+			  	t.parentNode.insertBefore(s, t);
+			}
+			catch (e)
+			{
+				// ignore
+			}
+		};
+		
+		/**
+		 * Synchronously adds scripts to the page.
+		 */
+		function mxscript(src, onLoad, id, dataAppKey, noWrite, onError)
+		{
+			var defer = onLoad == null && !noWrite;
+			
+			if ((urlParams['dev'] != '1' && typeof document.createElement('canvas').getContext === "function") ||
+				onLoad != null || noWrite)
+			{
+				var s = document.createElement('script');
+				s.setAttribute('type', 'text/javascript');
+				s.setAttribute('defer', 'true');
+				s.setAttribute('src', src);
+
+				if (id != null)
+				{
+					s.setAttribute('id', id);
+				}
+				
+				if (dataAppKey != null)
+				{
+					s.setAttribute('data-app-key', dataAppKey);
+				}
+				
+				if (onLoad != null)
+				{
+					var r = false;
+				
+					s.onload = s.onreadystatechange = function()
+					{
+						if (!r && (!this.readyState || this.readyState == 'complete'))
+						{
+				      		r = true;
+				      		onLoad();
+						}
+				  	};
+				}
+
+				if (onError != null)
+				{
+					s.onerror = function(e)
+					{
+						onError('Failed to load ' + src, e);
+					};
+				}
+			  	
+			  	var t = document.getElementsByTagName('script')[0];
+			  	
+			  	if (t != null)
+			  	{
+			  		t.parentNode.insertBefore(s, t);
+			  	}
+			}
+			else
+			{
+				document.write('<script src="' + src + '"' + ((id != null) ? ' id="' + id +'" ' : '') +
+					((dataAppKey != null) ? ' data-app-key="' + dataAppKey +'" ' : '') + '></scr' + 'ipt>');
+			}
+		};
+
+		/**
+		 * Asynchronously adds scripts to the page.
+		 */
+		function mxinclude(src)
+		{
+			var g = document.createElement('script');
+			g.type = 'text/javascript';
+			g.async = true;
+			g.src = src;
+			
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(g, s);
+		};
+		
+		/**
+		 * Adds meta tags with application name (depends on offline URL parameter)
+		 */
+		(function()
+		{
+			var name = 'diagrams.net';
+			mxmeta('apple-mobile-web-app-title', name);
+			mxmeta('application-name', name);
+
+			if (mxIsElectron)
+			{
+				mxmeta(null, 'default-src \'self\'; script-src \'self\' \'sha256-6g514VrT/cZFZltSaKxIVNFF46+MFaTSDTPB8WfYK+c=\'; connect-src \'self\' https://*.draw.io https://*.diagrams.net https://fonts.googleapis.com https://fonts.gstatic.com; img-src * data:; media-src *; font-src *; frame-src \'none\'; style-src \'self\' \'unsafe-inline\' https://fonts.googleapis.com; base-uri \'none\';child-src \'self\';object-src \'none\';', 'Content-Security-Policy');
+			}
+		})();
+		
+		// Checks for local storage
+		var isLocalStorage = false;
+		
+		try
+		{
+			isLocalStorage = urlParams['local'] != '1' && typeof(localStorage) != 'undefined';
+		}
+		catch (e)
+		{
+			// ignored
+		}
+
+		var mxScriptsLoaded = false, mxWinLoaded = false;
+		
+		function checkAllLoaded()
+		{
+			if (mxScriptsLoaded && mxWinLoaded)
+			{
+				App.main();				
+			}
+		};
+		
+		var t0 = new Date();
+
+		// Changes paths for local development environment
+		if (urlParams['dev'] == '1')
+		{
+			// Used to request grapheditor/mxgraph sources in dev mode
+			var mxDevUrl = document.location.protocol + '//test.draw.io/drawio/src/main';
+			
+			// Used to request draw.io sources in dev mode
+			var drawDevUrl = document.location.protocol + '//test.draw.io/drawio/src/main/webapp/';
+			var geBasePath = drawDevUrl + '/js/grapheditor';
+			var mxBasePath = mxDevUrl + '/mxgraph';
+			
+			if (document.location.protocol == 'file:')
+			{
+				geBasePath = './js/grapheditor';
+				mxBasePath = './mxgraph';
+				drawDevUrl = './';
+				
+				// Forces includes for dev environment in node.js
+				mxForceIncludes = true;
+			}
+
+			mxForceIncludes = false;
+
+			mxscript(drawDevUrl + 'js/PreConfig.js');
+			mxscript(drawDevUrl + 'js/diagramly/Init.js');
+			mxscript(geBasePath + '/Init.js');
+			mxscript(mxBasePath + '/mxClient.js');
+			
+			// Adds all JS code that depends on mxClient. This indirection via Devel.js is
+			// required in some browsers to make sure mxClient.js (and the files that it
+			// loads asynchronously) are available when the code loaded in Devel.js runs.
+			mxscript(drawDevUrl + 'js/diagramly/Devel.js');
+			
+			// Electron
+			if (mxIsElectron)
+			{
+				mxscript('js/diagramly/DesktopLibrary.js');
+				mxscript('js/diagramly/ElectronApp.js');
+			}
+			
+			mxscript(drawDevUrl + 'js/PostConfig.js');
+		}
+		else
+		{
+			(function()
+			{
+				var hostName = window.location.hostname;
+				
+				// Supported domains are *.draw.io and the packaged version in Quip
+				var supportedDomain = (hostName.substring(hostName.length - 8, hostName.length) === '.draw.io') ||
+					(hostName.substring(hostName.length - 13, hostName.length) === '.diagrams.net');
+				
+				function loadAppJS()
+				{
+					mxscript('js/app.min.js', function()
+					{
+						mxScriptsLoaded = true;
+						checkAllLoaded();
+						
+						// Electron
+						if (mxIsElectron)
+						{
+							mxscript('js/diagramly/DesktopLibrary.js', function()
+							{
+								mxscript('js/diagramly/ElectronApp.js', function()
+								{
+									mxscript('js/extensions.min.js', function()
+									{
+										mxscript('js/stencils.min.js', function()
+										{
+											mxscript('js/shapes-14-6-5.min.js', function()
+											{
+												mxscript('js/PostConfig.js');
+											});
+										});
+									});
+								});
+							});
+						}
+						else if (!supportedDomain)
+						{
+							mxscript('js/PostConfig.js');
+						}
+					});
+				};
+				
+				if (!supportedDomain || mxIsElectron)
+				{
+					mxscript('js/PreConfig.js', loadAppJS);
+				}
+				else
+				{
+					loadAppJS();
+				}
+			})();
+		}
+
+		// Adds basic error handling
+		window.onerror = function()
+		{
+			var status = document.getElementById('geStatus');
+			
+			if (status != null)
+			{
+				status.innerHTML = 'Page could not be loaded. Please try refreshing.';
+			}
+		};
+	</script>
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/plgmlhohecdddhbmmkncjdmlhcmaachm">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://viewer.diagrams.net/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://viewer.diagrams.net/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://viewer.diagrams.net/images/favicon-16x16.png">
+	<link rel="mask-icon" href="https://viewer.diagrams.net/images/safari-pinned-tab.svg" color="#d89000">
+    <link rel="stylesheet" type="text/css" href="./admin-panel-wireframe.drawio - Page-1_files/grapheditor.css">
+    <link rel="canonical" href="https://app.diagrams.net/">
+	<link rel="manifest" href="https://viewer.diagrams.net/images/manifest.json">
+	<link rel="shortcut icon" href="https://viewer.diagrams.net/favicon.ico">
+	<style type="text/css">
+		body { overflow:hidden; }
+		div.picker { z-index: 10007; }
+		.geSidebarContainer .geTitle input {
+			font-size:8pt;
+			color:#606060;
+		}
+		.geBlock {
+			z-index:-3;
+			margin:100px;
+			margin-top:40px;
+			margin-bottom:30px;
+			padding:20px;
+			text-align:center;
+			min-width:50%;
+		}
+		.geBlock h1, .geBlock h2 {
+			margin-top:0px;
+			padding-top:0px;
+		}
+		.geEditor *:not(.geScrollable)::-webkit-scrollbar {
+		    width:10px;
+		    height:10px;
+		}
+		.geEditor ::-webkit-scrollbar-track {
+			background-clip:padding-box;
+			border:solid transparent;
+			border-width:1px;
+		}
+		.geEditor ::-webkit-scrollbar-corner {
+			background-color:transparent;
+		}
+		.geEditor ::-webkit-scrollbar-thumb {
+			background-color:rgba(0,0,0,.1);
+			background-clip:padding-box;
+			border:solid transparent;
+			border-radius:10px;
+		}
+		.geEditor ::-webkit-scrollbar-thumb:hover {
+			background-color:rgba(0,0,0,.4);
+		}
+		.geTemplate {
+			border:1px solid transparent;
+			display:inline-block;
+			_display:inline;
+			vertical-align:top;
+			border-radius:3px;
+			overflow:hidden;
+			font-size:14pt;
+			cursor:pointer;
+			margin:5px;
+		}
+	</style>
+	<!-- Workaround for binary XHR in IE 9/10, see App.loadUrl -->
+	<!--[if (IE 9)|(IE 10)]><!-->
+		<script type="text/vbscript">
+			Function mxUtilsBinaryToArray(Binary)
+				Dim i
+				ReDim byteArray(LenB(Binary))
+				For i = 1 To LenB(Binary)
+					byteArray(i-1) = AscB(MidB(Binary, i, 1))
+				Next
+				mxUtilsBinaryToArray = byteArray
+			End Function
+		</script>
+	<!--<![endif]-->
+<style type="text/css"></style><link rel="stylesheet" href="./admin-panel-wireframe.drawio - Page-1_files/common.css" charset="UTF-8" type="text/css"><script type="text/javascript" src="./admin-panel-wireframe.drawio - Page-1_files/startup.js"></script><script src="./admin-panel-wireframe.drawio - Page-1_files/core.js" charset="UTF-8"></script><script src="./admin-panel-wireframe.drawio - Page-1_files/svg.js" charset="UTF-8"></script><script src="./admin-panel-wireframe.drawio - Page-1_files/tex.js" charset="UTF-8"></script><script src="./admin-panel-wireframe.drawio - Page-1_files/asciimath.js" charset="UTF-8"></script><script src="./admin-panel-wireframe.drawio - Page-1_files/safe.js" charset="UTF-8"></script><script src="./admin-panel-wireframe.drawio - Page-1_files/tex(1).js" charset="UTF-8"></script><style>.picker-dialog-frame{width:100%;height:100%;border:0;overflow:hidden}.picker-dialog-bg{position:absolute;top:0;left:0;background-color:#fff;z-index:1000}.picker-dialog{position:absolute;top:0;left:0;background-color:#fff;border:1px solid #acacac;width:auto;padding:0;z-index:1001;overflow:auto;box-shadow:0 4px 16px rgba(0,0,0,.2)}.picker-dialog-content{font-size:0;padding:0}.picker-dialog-buttons,.picker-dialog-title{display:none}</style><style>@font-face { font-family: "Architects Daughter"; src: url(styles/fonts/ArchitectsDaughter-Regular.ttf) format("truetype"); }</style></head>
+<body class="geEditor">
+
+<script type="text/javascript">
+/**
+ * Main
+ */
+if (urlParams['dev'] != '1' && typeof document.createElement('canvas').getContext === "function")
+{
+	window.addEventListener('load', function()
+	{
+		mxWinLoaded = true;
+		checkAllLoaded();
+	});
+}
+else
+{
+	App.main();
+}
+</script>
+
+
+<div class="geDiagramContainer" tabindex="0" style="inset: 0px; border: none; cursor: move; overflow: auto;"><svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 1404px; min-height: 914px; position: absolute; background-image: none; background-color: rgb(255, 255, 255);"><defs><filter id="dropShadow"><fegaussianblur in="SourceAlpha" stdDeviation="1.7" result="blur"></fegaussianblur><feoffset in="blur" dx="3" dy="3" result="offsetBlur"></feoffset><feflood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feflood><fecomposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></fecomposite><feblend in="SourceGraphic" in2="offsetBlur"></feblend></filter></defs><g transformOrigin="0 0" transform="scale(1.12,1.12)translate(151,-66)"><g></g><g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="0" y="170" width="230" height="710" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="0" y="170" width="230" height="710" fill="none" stroke="none" pointer-events="all"></rect><path d="M -2.59 172 L 233.9 172.06 L 230.9 876.77 L -0.85 881.98" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 0 170 C 74 165.77 143.74 168.2 230 170 M 0 170 C 92.13 173.94 182.05 173.07 230 170 M 230 170 C 228.02 368.62 229.52 566.17 230 880 M 230 170 C 230.03 406.55 230.62 643.43 230 880 M 230 880 C 161.61 876.12 96.02 877.2 0 880 M 230 880 C 182.4 878.12 135.68 877.1 0 880 M 0 880 C 2.32 707.8 4.5 537.74 0 170 M 0 880 C 3.39 643.34 2.94 405.61 0 170" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="246" y="480" width="830" height="390" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="246" y="480" width="830" height="390" fill="none" stroke="none" pointer-events="all"></rect><path d="M 246.46 478.46 L 1072.13 477.48 L 1072.55 871.83 L 244.33 867.95" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 246 480 C 504.55 484.25 761.08 482.35 1076 480 M 246 480 C 467.45 482.29 688.17 481.25 1076 480 M 1076 480 C 1070.16 601.78 1071.02 722.57 1076 870 M 1076 480 C 1076.06 599.59 1075.63 722.01 1076 870 M 1076 870 C 861.94 869.05 648.08 870.76 246 870 M 1076 870 C 872.72 867.51 668.08 867.74 246 870 M 246 870 C 243.75 720.19 242.88 570.98 246 480 M 246 870 C 245.12 759.23 244.65 646.82 246 480" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="535" y="180" width="260" height="140" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="535" y="180" width="260" height="140" fill="none" stroke="none" pointer-events="all"></rect><path d="M 538.51 182.91 L 791.35 180.91 L 795.2 318.88 L 532.51 321.92" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 535 180 C 614.54 177.28 696.36 180.2 795 180 M 535 180 C 621.76 179.8 710.86 179.68 795 180 M 795 180 C 792.57 232.49 799.76 276.28 795 320 M 795 180 C 797.32 221.69 794.38 260.26 795 320 M 795 320 C 735.83 321.34 681.17 320.75 535 320 M 795 320 C 720.78 320.04 646.69 318.72 535 320 M 535 320 C 533.51 273.74 533.09 232.17 535 180 M 535 320 C 539.06 287.64 538.59 252.29 535 180" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="250" y="180" width="210" height="140" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="250" y="180" width="210" height="140" fill="none" stroke="none" pointer-events="all"></rect><path d="M 251.62 183.83 L 456.8 179.76 L 459.49 320.99 L 253.88 321.85" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 250 180 C 316.86 179.87 379.06 183.8 460 180 M 250 180 C 308.61 180.22 367.61 180.86 460 180 M 460 180 C 465.56 207.02 460.2 243.31 460 320 M 460 180 C 460.21 213.85 460.87 244.61 460 320 M 460 320 C 390.59 319.64 314.11 324.29 250 320 M 460 320 C 383.83 322.24 303.49 320.38 250 320 M 250 320 C 248.63 290.26 250.32 264.53 250 180 M 250 320 C 247.53 272.89 247.72 226.48 250 180" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="840" y="180" width="240" height="140" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="840" y="180" width="240" height="140" fill="none" stroke="none" pointer-events="all"></rect><path d="M 839.72 176.75 L 1077.26 178.61 L 1078.79 323.1 L 842.25 321.79" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 840 180 C 912.31 181.91 986.77 179.62 1080 180 M 840 180 C 894.35 176.33 950.33 177.66 1080 180 M 1080 180 C 1079.95 217.55 1078.03 258.35 1080 320 M 1080 180 C 1076.51 234 1076.75 288.97 1080 320 M 1080 320 C 1016.65 325.1 955.26 321.15 840 320 M 1080 320 C 1018.54 320.93 959.08 322.14 840 320 M 840 320 C 844.34 278.78 840.16 240.89 840 180 M 840 320 C 836.59 286.13 837.45 252.66 840 180" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="0" y="90" width="1100" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="0" y="90" width="1100" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M -1.41 88.2 L 1096.94 87.45 L 1097.55 148.96 L -1.19 146.73" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 0 90 C 272.87 83.5 547.15 83.42 1100 90 M 0 90 C 369.4 96.38 739.23 96.45 1100 90 M 1100 90 C 1102.72 101.54 1097.94 119.81 1100 150 M 1100 90 C 1100.36 106.85 1098.4 125.48 1100 150 M 1100 150 C 804.52 144.21 507.23 143.17 0 150 M 1100 150 C 781.57 148.85 463.2 149.93 0 150 M 0 150 C 0.43 139.15 -3.42 121 0 90 M 0 150 C 0.53 133.79 -0.75 115.94 0 90" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="280" y="580" width="120" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="280" y="580" width="120" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 281.65 582.66 L 397.16 580.87 L 401.2 636.01 L 277.99 640.7" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 280 580 C 306.4 580.71 336.27 580.91 400 580 M 280 580 C 306.45 581.19 330.7 579.79 400 580 M 400 580 C 401.09 597.99 402.04 615.7 400 640 M 400 580 C 399.03 594.91 398.86 611.61 400 640 M 400 640 C 374 640.44 340.66 640.84 280 640 M 400 640 C 358.6 639.67 320.94 640.16 280 640 M 280 640 C 278.25 620.66 283.46 597.69 280 580 M 280 640 C 280.71 626.54 279.77 611.28 280 580" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="910" y="580" width="120" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="910" y="580" width="120" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 906.7 579.11 L 1027.39 576.3 L 1026.85 641.07 L 907.18 636.67" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 910 580 C 942.11 580.55 969.63 581.15 1030 580 M 910 580 C 943.48 580.17 975.53 577.2 1030 580 M 1030 580 C 1031.86 596.44 1030.53 621.59 1030 640 M 1030 580 C 1031.69 596.96 1029.32 611.74 1030 640 M 1030 640 C 983.4 643.13 934.63 638.53 910 640 M 1030 640 C 986.18 640.43 941.65 642.7 910 640 M 910 640 C 911.67 624.18 909.95 600.38 910 580 M 910 640 C 909.29 617.28 908.68 592.61 910 580" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="700" y="580" width="120" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="700" y="580" width="120" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 699.75 583.57 L 817.62 579.72 L 820.49 638.12 L 696.36 640.63" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 700 580 C 729.83 575.6 762.99 576.59 820 580 M 700 580 C 740.51 583.94 784.35 583.42 820 580 M 820 580 C 820.23 602.9 816.63 619.49 820 640 M 820 580 C 820.36 595.02 819.78 607.88 820 640 M 820 640 C 776.8 637.82 736.61 636.22 700 640 M 820 640 C 793.75 641.19 770.36 641.23 700 640 M 700 640 C 699.49 627.69 698.83 611.07 700 580 M 700 640 C 699.47 620.03 699.19 597.95 700 580" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="480" y="580" width="120" height="60" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="480" y="580" width="120" height="60" fill="none" stroke="none" pointer-events="all"></rect><path d="M 482.8 580.03 L 597.84 583.15 L 596.14 643.18 L 483.54 636.6" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 480 580 C 507.54 583.44 538.36 576.83 600 580 M 480 580 C 507.54 578.92 535.17 580.83 600 580 M 600 580 C 601.01 601.35 603.12 625.38 600 640 M 600 580 C 603.03 593.07 600.24 604.01 600 640 M 600 640 C 560.2 640.52 520.58 641.91 480 640 M 600 640 C 571.33 641.95 541.08 639.77 480 640 M 480 640 C 477.31 619.21 477.71 589.76 480 580 M 480 640 C 482.05 622.77 482.1 607.29 480 580" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 920 500 L 1020 500 L 1020 560 L 920 560 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 920 500 L 1020 500 L 1020 560 L 920 560 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 920 560 L 920 500 L 930 510 L 930 550 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 920 560 L 920 500 L 930 510 L 930 550 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 920 500 L 1020 500 L 1010 510 L 930 510 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 920 500 L 1020 500 L 1010 510 L 930 510 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 1020 500 L 1020 560 L 1010 550 L 1010 510 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 1020 500 L 1020 560 L 1010 550 L 1010 510 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 920 560 L 930 550 L 1010 550 L 1020 560 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 920 560 L 930 550 L 1010 550 L 1020 560 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 920 560 L 920 500 L 930 510 L 930 550 Z" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 920 560 L 920 500 L 930 510 L 930 550 Z" fill="none" stroke="none" pointer-events="all"></path><path d="M 917.94 501.4 L 1023.54 503.44 L 1020.61 562.08 L 922.39 559.85 L 922.45 501.26" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 920 500 M 920 500 C 943.2 498.17 971.18 502.49 1020 500 M 920 500 C 947.86 502.12 973.86 498.66 1020 500 M 1020 500 C 1017.12 518.27 1017.43 539.45 1020 560 M 1020 500 C 1020.24 513.18 1020.28 528.43 1020 560 M 1020 560 C 989.36 559.89 962.2 558.16 920 560 M 1020 560 C 985.76 560.45 951.2 562.71 920 560 M 920 560 C 922.49 543.73 916.61 529.82 920 500 M 920 560 C 921.43 544.43 918.49 527.62 920 500" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 917.94 561.4 L 923.54 503.44 L 930.61 512.08 L 932.39 549.85 L 922.45 561.26" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 920 560 M 920 560 C 918.81 541.97 921.6 531.18 920 500 M 920 560 C 919.36 544.9 917.51 524.73 920 500 M 920 500 C 921.06 502.61 924.48 507.23 930 510 M 920 500 C 921.97 502.18 924.22 505.77 930 510 M 930 510 C 930.45 523.9 934.16 534.52 930 550 M 930 510 C 931.17 522.68 931.42 538.86 930 550 M 930 550 C 929.3 550.75 922.79 553.25 920 560 M 930 550 C 928.31 552.86 923.59 554.83 920 560" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 917.94 501.4 L 1023.54 503.44 L 1010.61 512.08 L 932.39 509.85 L 922.45 501.26" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 920 500 M 920 500 C 943.2 498.17 971.18 502.49 1020 500 M 920 500 C 947.86 502.12 973.86 498.66 1020 500 M 1020 500 C 1014.67 502.49 1011.7 507.11 1010 510 M 1020 500 C 1017.54 502.09 1015.35 505.68 1010 510 M 1010 510 C 985.54 510.22 964.55 508.49 930 510 M 1010 510 C 982.72 510.11 955.12 512.37 930 510 M 930 510 C 929.34 506.04 922.83 503.84 920 500 M 930 510 C 928.33 507.57 923.61 504.25 920 500" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 1017.94 501.4 L 1023.54 563.44 L 1010.61 552.08 L 1012.39 509.85 L 1022.45 501.26" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 1020 500 M 1020 500 C 1017.2 512.2 1019.99 531.64 1020 560 M 1020 500 C 1020.66 518.32 1018.82 531.56 1020 560 M 1020 560 C 1014.61 556.1 1011.64 554.32 1010 550 M 1020 560 C 1017.28 557.65 1015.1 556.81 1010 550 M 1010 550 C 1010.02 539.21 1013.74 525.12 1010 510 M 1010 550 C 1009.95 534.84 1010.19 523.18 1010 510 M 1010 510 C 1014.05 506.22 1012.25 504.02 1020 500 M 1010 510 C 1013.62 507.55 1014.18 504.23 1020 500" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 917.94 561.4 L 933.54 553.44 L 1010.61 552.08 L 1022.39 559.85 L 922.45 561.26" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 920 560 M 920 560 C 921.24 555.53 925.74 556.07 930 550 M 920 560 C 922.68 558.41 924.16 553.17 930 550 M 930 550 C 952.52 549.57 978.4 551.57 1010 550 M 930 550 C 947.21 550.24 964.99 552.19 1010 550 M 1010 550 C 1013.31 554.35 1019.02 556.22 1020 560 M 1010 550 C 1014.03 552.43 1017.68 557.51 1020 560 M 1020 560 C 998.83 556.95 969.4 557.17 920 560 M 1020 560 C 994.93 560.4 965.57 559.45 920 560" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path><path d="M 917.94 561.4 L 923.54 503.44 L 930.61 512.08 L 932.39 549.85 L 922.45 561.26" fill="rgb(255, 255, 255)" stroke="none" pointer-events="all"></path><path d="M 920 560 M 920 560 C 918.81 541.97 921.6 531.18 920 500 M 920 560 C 919.36 544.9 917.51 524.73 920 500 M 920 500 C 921.06 502.61 924.48 507.23 930 510 M 920 500 C 921.97 502.18 924.22 505.77 930 510 M 930 510 C 930.45 523.9 934.16 534.52 930 550 M 930 510 C 931.17 522.68 931.42 538.86 930 550 M 930 550 C 929.3 550.75 922.79 553.25 920 560 M 930 550 C 928.31 552.86 923.59 554.83 920 560" fill="none" stroke="rgb(0, 0, 0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignobject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 530px; margin-left: 921px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 20px; font-family: &quot;Architects Daughter&quot;; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Button</div></div></div></foreignobject></g></g></g><g></g><g></g></g></svg><div style="position: fixed; overflow: hidden; box-sizing: border-box; white-space: nowrap; padding: 10px 10px 8px; left: 50%; background-color: rgb(0, 0, 0); border-radius: 16px; transition: opacity 600ms ease-in-out 0s; bottom: 20px; transform: translate(-50%, 0px); opacity: 0;"><span title="Previous Page" style="padding-left: 0px; padding-right: 4px; cursor: pointer; display: none;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE1LjQxIDcuNDFMMTQgNmwtNiA2IDYgNiAxLjQxLTEuNDFMMTAuODMgMTJsNC41OC00LjU5eiIvPjwvc3ZnPg==" style="width: 36px; filter: invert(100%);"></span><div style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI Variable&quot;, &quot;Segoe UI&quot;, system-ui, ui-sans-serif, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; display: none; vertical-align: top; font-weight: bold; margin-top: 8px; font-size: 14px; color: rgb(255, 255, 255);"></div><span title="Next Page" style="padding-left: 4px; padding-right: 0px; cursor: pointer; display: none;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEwIDZMOC41OSA3LjQxIDEzLjE3IDEybC00LjU4IDQuNTlMMTAgMThsNi02LTYtNnoiLz48L3N2Zz4=" style="width: 36px; filter: invert(100%);"></span><span title="Zoom Out (Alt+Mousewheel)" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuNSAxNGgtLjc5bC0uMjgtLjI3QzE1LjQxIDEyLjU5IDE2IDExLjExIDE2IDkuNSAxNiA1LjkxIDEzLjA5IDMgOS41IDNTMyA1LjkxIDMgOS41IDUuOTEgMTYgOS41IDE2YzEuNjEgMCAzLjA5LS41OSA0LjIzLTEuNTdsLjI3LjI4di43OWw1IDQuOTlMMjAuNDkgMTlsLTQuOTktNXptLTYgMEM3LjAxIDE0IDUgMTEuOTkgNSA5LjVTNy4wMSA1IDkuNSA1IDE0IDcuMDEgMTQgOS41IDExLjk5IDE0IDkuNSAxNHpNNyA5aDV2MUg3eiIvPjwvc3ZnPg==" style="width: 36px; filter: invert(100%);"></span><span title="Zoom In (Alt+Mousewheel)" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuNSAxNGgtLjc5bC0uMjgtLjI3QzE1LjQxIDEyLjU5IDE2IDExLjExIDE2IDkuNSAxNiA1LjkxIDEzLjA5IDMgOS41IDNTMyA1LjkxIDMgOS41IDUuOTEgMTYgOS41IDE2YzEuNjEgMCAzLjA5LS41OSA0LjIzLTEuNTdsLjI3LjI4di43OWw1IDQuOTlMMjAuNDkgMTlsLTQuOTktNXptLTYgMEM3LjAxIDE0IDUgMTEuOTkgNSA5LjVTNy4wMSA1IDkuNSA1IDE0IDcuMDEgMTQgOS41IDExLjk5IDE0IDkuNSAxNHptMi41LTRoLTJ2Mkg5di0ySDdWOWgyVjdoMXYyaDJ2MXoiLz48L3N2Zz4=" style="width: 36px; filter: invert(100%);"></span><span title="Fit" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTUgMTVIM3Y0YzAgMS4xLjkgMiAyIDJoNHYtMkg1di00ek01IDVoNFYzSDVjLTEuMSAwLTIgLjktMiAydjRoMlY1em03IDNjLTIuMjEgMC00IDEuNzktNCA0czEuNzkgNCA0IDQgNC0xLjc5IDQtNC0xLjc5LTQtNC00em0wIDZjLTEuMSAwLTItLjktMi0ycy45LTIgMi0yIDIgLjkgMiAyLS45IDItMiAyem03LTExaC00djJoNHY0aDJWNWMwLTEuMS0uOS0yLTItMnptMCAxNmgtNHYyaDRjMS4xIDAgMi0uOSAyLTJ2LTRoLTJ2NHoiLz48L3N2Zz4=" style="width: 36px; filter: invert(100%);"></span><span title="Layers" style="padding-left: 8px; padding-right: 8px; cursor: pointer; display: none;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTExLjk5IDE4LjU0bC03LjM3LTUuNzNMMyAxNC4wN2w5IDcgOS03LTEuNjMtMS4yN3pNMTIgMTZsNy4zNi01LjczTDIxIDlsLTktNy05IDcgMS42MyAxLjI3TDEyIDE2em0wLTExLjQ3TDE3Ljc0IDkgMTIgMTMuNDcgNi4yNiA5IDEyIDQuNTN6Ii8+PC9zdmc+" style="width: 36px; filter: invert(100%);"></span><span title="Tags" style="padding-left: 8px; padding-right: 8px; cursor: pointer; display: none;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE4cHgiIGZpbGw9IiMwMDAwMDAiPjxnPjxwYXRoIGQ9Ik0wLDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjwvZz48Zz48Zz48cGF0aCBkPSJNMjEuNDEsMTEuNDFsLTguODMtOC44M0MxMi4yMSwyLjIxLDExLjcsMiwxMS4xNywySDRDMi45LDIsMiwyLjksMiw0djcuMTdjMCwwLjUzLDAuMjEsMS4wNCwwLjU5LDEuNDFsOC44Myw4LjgzIGMwLjc4LDAuNzgsMi4wNSwwLjc4LDIuODMsMGw3LjE3LTcuMTdDMjIuMiwxMy40NiwyMi4yLDEyLjIsMjEuNDEsMTEuNDF6IE0xMi44MywyMEw0LDExLjE3VjRoNy4xN0wyMCwxMi44M0wxMi44MywyMHoiLz48Y2lyY2xlIGN4PSI2LjUiIGN5PSI2LjUiIHI9IjEuNSIvPjwvZz48L2c+PC9zdmc+" style="width: 36px; filter: invert(100%);"></span><span title="Print" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE5IDhoLTFWM0g2djVINWMtMS42NiAwLTMgMS4zNC0zIDN2Nmg0djRoMTJ2LTRoNHYtNmMwLTEuNjYtMS4zNC0zLTMtM3pNOCA1aDh2M0g4VjV6bTggMTJ2Mkg4di00aDh2MnptMi0ydi0ySDZ2Mkg0di00YzAtLjU1LjQ1LTEgMS0xaDE0Yy41NSAwIDEgLjQ1IDEgMXY0aC0yeiIvPjxjaXJjbGUgY3g9IjE4IiBjeT0iMTEuNSIgcj0iMSIvPjwvc3ZnPg==" style="width: 36px; filter: invert(100%);"></span><span title="Export" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE0LjEyIDRsMS44MyAySDIwdjEySDRWNmg0LjA1bDEuODMtMmg0LjI0TTE1IDJIOUw3LjE3IDRINGMtMS4xIDAtMiAuOS0yIDJ2MTJjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0yaC0zLjE3TDE1IDJ6bS0zIDdjMS42NSAwIDMgMS4zNSAzIDNzLTEuMzUgMy0zIDMtMy0xLjM1LTMtMyAxLjM1LTMgMy0zbTAtMmMtMi43NiAwLTUgMi4yNC01IDVzMi4yNCA1IDUgNSA1LTIuMjQgNS01LTIuMjQtNS01LTV6Ii8+PC9zdmc+" style="width: 36px; filter: invert(100%);"></span><span title="Edit" style="padding-left: 8px; padding-right: 8px; cursor: pointer;"><img border="0" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMThweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE0LjA2IDkuMDJsLjkyLjkyTDUuOTIgMTlINXYtLjkybDkuMDYtOS4wNk0xNy42NiAzYy0uMjUgMC0uNTEuMS0uNy4yOWwtMS44MyAxLjgzIDMuNzUgMy43NSAxLjgzLTEuODNjLjM5LS4zOS4zOS0xLjAyIDAtMS40MWwtMi4zNC0yLjM0Yy0uMi0uMi0uNDUtLjI5LS43MS0uMjl6bS0zLjYgMy4xOUwzIDE3LjI1VjIxaDMuNzVMMTcuODEgOS45NGwtMy43NS0zLjc1eiIvPjwvc3ZnPg==" style="width: 36px; filter: invert(100%);"></span></div></div></body></html>
